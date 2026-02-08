@@ -10,6 +10,12 @@ This repo provisions a small VPS stack with:
 
 It is intended to be started via `./start.sh`, which renders templates, initializes TLS (if needed), and boots the stack.
 
+## Requirements
+
+- A domain name you control, with A/AAAA records pointing to this VPS public IP.
+- Ports `80` and `443` open to the internet for HTTP-01 issuance and HTTPS traffic.
+- Docker and Docker Compose installed on the VPS. See setup: [Docker Engine](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/).
+
 ## Quick Start
 
 1. Create `.env` from the example:
@@ -65,12 +71,6 @@ The script will:
 - `nginx/site.full.conf.template` - full TLS + proxy configuration.
 - `v2ray/config.json.template` - V2Ray config template.
 - `clash/clash.yaml.template` - Clash client config template output.
-
-## Requirements
-
-- A domain name you control, with A/AAAA records pointing to this VPS public IP.
-- Ports `80` and `443` open to the internet for HTTP-01 issuance and HTTPS traffic.
-- Docker and Docker Compose installed on the VPS.
 
 ## Generate VLESS_UUID
 

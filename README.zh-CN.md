@@ -10,6 +10,12 @@
 
 推荐通过 `./start.sh` 启动。该脚本会渲染模板、初始化 TLS（如有需要），并启动整套服务。
 
+## 环境要求
+
+- 一个你控制的域名，A/AAAA 记录指向此 VPS 公网 IP。
+- 对外开放端口 `80` 和 `443`，用于 HTTP-01 签发与 HTTPS 流量。
+- 需要 Docker 和 Docker Compose。安装与设置请参考：[Docker Engine](https://docs.docker.com/get-docker/) 与 [Docker Compose](https://docs.docker.com/compose/install/)。
+
 ## 快速开始
 
 1. 从示例创建 `.env`：
@@ -65,12 +71,6 @@ cp .env.example .env
 - `nginx/site.full.conf.template` - 完整 TLS + 代理配置。
 - `v2ray/config.json.template` - V2Ray 配置模板。
 - `clash/clash.yaml.template` - Clash 客户端配置模板输出。
-
-## 环境要求
-
-- 一个你控制的域名，A/AAAA 记录指向此 VPS 公网 IP。
-- 对外开放端口 `80` 和 `443`，用于 HTTP-01 签发与 HTTPS 流量。
-- VPS 上已安装 Docker 与 Docker Compose。
 
 ## 生成 VLESS_UUID
 
