@@ -1,5 +1,7 @@
 # VPS Stack (Nginx + V2Ray + Certbot)
 
+[中文](README.zh-CN.md)
+
 This repo provisions a small VPS stack with:
 
 - `nginx` serving static content from `./html` and proxying a VLESS-over-WebSocket endpoint.
