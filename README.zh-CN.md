@@ -1,5 +1,7 @@
 # VPS Stack（Nginx + V2Ray + Certbot）
 
+[![GitHub](https://img.shields.io/github/license/SaltPepperVinegar/nginx-vless-ws-proxy-in-docker)](https://github.com/SaltPepperVinegar/nginx-vless-ws-proxy-in-docker/blob/master/LICENSE)
+
 [English](README.md)
 
 本仓库用于部署一个小型 VPS 站点栈，包含：
