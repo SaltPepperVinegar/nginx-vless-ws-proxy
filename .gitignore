@@ -16,5 +16,5 @@ Thumbs.db
 
 v2ray/config.json
 
-./nginx/site.conf
-./clash/clash.yaml
+nginx/site.conf
+clash/clash.yaml
